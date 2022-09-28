@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-base-300  md:w-3/12 p-10 mt-8 md:mt-0 ml-28">
-                    <Sidebar></Sidebar>
+                    <Sidebar exercises={exercises}></Sidebar>
                 </div>
             </div>
         </div>
