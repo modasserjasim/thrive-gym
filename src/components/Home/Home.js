@@ -5,12 +5,18 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Home = () => {
     const [exercises, setExercises] = useState([]);
+    const [exerciseList, setExerciseList] = useState([]);
 
     useEffect(() => {
         fetch('exercise-list.json')
             .then(res => res.json())
             .then(data => setExercises(data))
-    }, [])
+    }, []);
+
+    const handleAddToList = (exercise) => {
+        const newExerciseList = [...exerciseList, exercise];
+        setExerciseList(newExerciseList);
+    }
     return (
         <div>
             <div className="md:flex">
@@ -21,6 +27,7 @@ const Home = () => {
                         {
                             exercises.map(exercise => <Exercise
                                 exercise={exercise}
+                                handleAddToList={handleAddToList}
                                 key={exercise.id}>
                             </Exercise>)
                         }
@@ -28,7 +35,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-base-300  md:w-3/12 p-10 mt-8 md:mt-0 ml-28">
-                    <Sidebar exercises={exercises}></Sidebar>
+                    <Sidebar exercises={exercises} exerciseList={exerciseList}></Sidebar>
                 </div>
             </div>
         </div>

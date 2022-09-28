@@ -5,6 +5,7 @@ import SidebarExercise from '../SidebarExercise/SidebarExercise';
 
 const Sidebar = (props) => {
     const exercises = props.exercises;
+    const exerciseList = props.exerciseList;
     return (
         <div className='sticky top-10'>
             <PersonalInfo></PersonalInfo>
@@ -12,10 +13,10 @@ const Sidebar = (props) => {
             <h3 className='text-xl font-semibold'>Add A Break</h3>
             <div className='bg-base-100 p-5 mt-5 mb-10 px-8 rounded-lg flex justify-between text-center'>
                 {
-                    exercises.map(breakTime => <Break breakTime={breakTime}></Break>)
+                    exercises.map(breakTime => <Break breakTime={breakTime} key={breakTime.id}></Break>)
                 }
             </div>
-            <SidebarExercise></SidebarExercise>
+            <SidebarExercise exerciseList={exerciseList}></SidebarExercise>
 
         </div>
     );
