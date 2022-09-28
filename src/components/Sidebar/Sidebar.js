@@ -11,7 +11,7 @@ const Sidebar = (props) => {
             <PersonalInfo></PersonalInfo>
 
             <h3 className='text-xl font-semibold'>Add A Break</h3>
-            <div className='bg-base-100 p-5 mt-5 mb-10 px-8 rounded-lg flex justify-between text-center'>
+            <div className='bg-base-100 p-5 mt-5 mb-10 px-5 rounded-lg flex justify-between text-center'>
                 {
                     exercises.map(breakTime => <Break breakTime={breakTime} key={breakTime.id}></Break>)
                 }

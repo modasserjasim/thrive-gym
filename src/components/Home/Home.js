@@ -2,6 +2,8 @@ import logo from '../../thrive-gym-logo.png';
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import Sidebar from '../Sidebar/Sidebar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
     const [exercises, setExercises] = useState([]);
@@ -16,6 +18,7 @@ const Home = () => {
     const handleAddToList = (exercise) => {
         const newExerciseList = [...exerciseList, exercise];
         setExerciseList(newExerciseList);
+        toast(exercise.name + ' Added to the list!');
     }
     return (
         <div>
@@ -31,6 +34,7 @@ const Home = () => {
                                 key={exercise.id}>
                             </Exercise>)
                         }
+                        <ToastContainer />
                     </div>
                 </div>
 

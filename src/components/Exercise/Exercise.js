@@ -11,6 +11,7 @@ const Exercise = ({ exercise, handleAddToList }) => {
                 <h4 className='text-lg font-semibold'>For Age: {forAge}</h4>
                 <h4 className='text-lg font-semibold'>Time Required: {timeRequired}s</h4>
                 <button onClick={() => handleAddToList(exercise)} className="w-full bg-primary text-white p-3 mt-3 disabled:bg-secondary text-2xl rounded-md font-semibold">Add to list</button>
+
             </div>
         </div>
     );
