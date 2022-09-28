@@ -1,6 +1,7 @@
 import logo from '../../thrive-gym-logo.png';
 import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Home = () => {
     const [exercises, setExercises] = useState([]);
@@ -27,9 +28,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-base-300  md:w-3/12 p-10 mt-8 md:mt-0 ml-28">
-                    <div className=''>
-                        <h2>Welcome</h2>
-                    </div>
+                    <Sidebar></Sidebar>
                 </div>
             </div>
         </div>
