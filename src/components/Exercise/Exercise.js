@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Exercise = ({ exercise, handleAddToList, toggle }) => {
+const Exercise = ({ exercise, handleAddToList }) => {
     const { name, description, forAge, timeRequired, img } = exercise;
     return (
         <div className="bg-base-300 rounded-lg border-2 border-gray-600">

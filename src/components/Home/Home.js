@@ -11,7 +11,6 @@ const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [exerciseList, setExerciseList] = useState([]);
     const [breakTime, setBreakTime] = useState(0);
-    const [toggle, setToggle] = useState(true);
 
     useEffect(() => {
         fetch('exercise-list.json')
@@ -31,7 +30,6 @@ const Home = () => {
         const newExerciseList = [...exerciseList, exercise];
         setExerciseList(newExerciseList);
         toast(exercise.name + ' Added to the list!');
-        setToggle(!toggle);
 
     }
     const handleBreakTime = (time) => {
@@ -53,8 +51,7 @@ const Home = () => {
                             exercises.map(exercise => <Exercise
                                 key={exercise.id}
                                 exercise={exercise}
-                                handleAddToList={handleAddToList}
-                                toggle={toggle}>
+                                handleAddToList={handleAddToList}>
                             </Exercise>)
                         }
                         <ToastContainer />
