@@ -6,14 +6,15 @@ import SidebarExercise from '../SidebarExercise/SidebarExercise';
 const Sidebar = (props) => {
     const exercises = props.exercises;
     const exerciseList = props.exerciseList;
+    const breakTimes = exercises.slice(0, 4);
     return (
         <div className='sticky top-10'>
             <PersonalInfo></PersonalInfo>
 
             <h3 className='text-xl font-semibold'>Add A Break</h3>
-            <div className='bg-base-100 p-5 mt-5 mb-10 px-5 rounded-lg flex justify-between text-center'>
+            <div className='bg-base-100 p-5 mt-5 mb-10 px-5 rounded-lg flex justify-between text-center flex-wrap'>
                 {
-                    exercises.map(breakTime => <Break breakTime={breakTime} key={breakTime.id}></Break>)
+                    breakTimes.map(breakTime => <Break breakTime={breakTime} key={breakTime.id}></Break>)
                 }
             </div>
             <SidebarExercise exerciseList={exerciseList}></SidebarExercise>

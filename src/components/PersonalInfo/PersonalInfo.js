@@ -13,7 +13,7 @@ const PersonalInfo = () => {
                     </svg> Dhaka, Bangladesh</p>
                 </div>
             </div>
-            <div className='bg-base-100 p-5 my-10 px-8 rounded-lg flex justify-between text-center'>
+            <div className='bg-base-100 py-5 my-10 px-4 lg:px-8 rounded-lg flex justify-between flex-wrap text-center'>
                 <div>
                     <h2 className='text-2xl font-bold'>79<span className='text-sm text-gray-500'>kg</span></h2>
                     <p className='text-lg font-medium text-gray-400'>Weight</p>

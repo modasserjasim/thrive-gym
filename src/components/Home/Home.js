@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <div>
             <div className="md:flex">
-                <div className="w-full md:w-9/12 py-20 pl-28">
+                <div className="w-full md:w-9/12 py-16 md:pl-14 lg:pl-28">
                     <img className='w-72' src={logo} alt="Thrive Gym Logo" />
                     <h3 className='text-3xl py-8'>Select today's exercise</h3>
                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
@@ -38,7 +38,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="bg-base-300  md:w-3/12 p-10 mt-8 md:mt-0 ml-28">
+                <div className="bg-base-300  md:w-3/12 p-5 lg:p-10 mt-8 md:mt-0 md:ml-14 lg:ml-28">
                     <Sidebar exercises={exercises} exerciseList={exerciseList}></Sidebar>
                 </div>
             </div>
