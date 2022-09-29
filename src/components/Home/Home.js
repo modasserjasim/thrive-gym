@@ -4,6 +4,7 @@ import Exercise from '../Exercise/Exercise';
 import Sidebar from '../Sidebar/Sidebar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { addToLocalStorage, getLocalStorageData } from '../../utilities/localStorage';
 
 const Home = () => {
     const [exercises, setExercises] = useState([]);
@@ -16,6 +17,12 @@ const Home = () => {
             .then(data => setExercises(data))
     }, []);
 
+    useEffect(() => {
+        const storedBreakTime = getLocalStorageData();
+        setBreakTime(storedBreakTime);
+
+    }, []);
+
     const handleAddToList = (exercise) => {
         const newExerciseList = [...exerciseList, exercise];
         setExerciseList(newExerciseList);
@@ -25,6 +32,7 @@ const Home = () => {
         const newTime = time.break;
         setBreakTime(newTime);
         toast(time.break + 's Added as your break time!');
+        addToLocalStorage(time);
     }
     return (
         <div>
@@ -46,7 +54,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="bg-base-300 md:w-4/12  lg:w-3/12 p-5 lg:p-10 mt-8 md:mt-0 md:ml-14 lg:ml-28">
+                <div className="bg-base-300 md:w-4/12 rounded-lg md:rounded  lg:w-3/12 p-5 lg:p-10 md:ml-14 lg:ml-28">
                     <Sidebar
                         exercises={exercises}
                         exerciseList={exerciseList}
