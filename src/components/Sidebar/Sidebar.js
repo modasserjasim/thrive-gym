@@ -5,7 +5,7 @@ import SidebarExercise from '../SidebarExercise/SidebarExercise';
 
 const Sidebar = ({ exercises, exerciseList, breakTime, handleBreakTime }) => {
     // console.log(exercises, exerciseList);
-    const getBreakTimes = exercises.slice(0, 4);
+    const getBreakTimes = exercises.slice(0, 5);
     return (
         <div className='sticky top-10'>
             <PersonalInfo></PersonalInfo>

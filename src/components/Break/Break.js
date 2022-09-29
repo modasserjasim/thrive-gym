@@ -5,7 +5,7 @@ const Break = ({ time, handleBreakTime }) => {
 
     return (
         <div>
-            <button onClick={() => handleBreakTime(time)} className='text-lg font-bold bg-base-300 p-3 rounded-full active:bg-primary'>
+            <button onClick={() => handleBreakTime(time)} className='text-md bg-base-300 p-3 rounded-full hover:bg-primary active:bg-primary'>
                 {time.break}s
             </button>
         </div>
