@@ -11,6 +11,7 @@ const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [exerciseList, setExerciseList] = useState([]);
     const [breakTime, setBreakTime] = useState(0);
+    const [toggle, setToggle] = useState(true);
 
     useEffect(() => {
         fetch('exercise-list.json')
@@ -30,6 +31,8 @@ const Home = () => {
         const newExerciseList = [...exerciseList, exercise];
         setExerciseList(newExerciseList);
         toast(exercise.name + ' Added to the list!');
+        setToggle(!toggle);
+
     }
     const handleBreakTime = (time) => {
         const newTime = time.break;
@@ -43,14 +46,15 @@ const Home = () => {
                 <div className="w-full md:w-8/12 lg:w-9/12 py-8 md:py-16 md:pl-14 lg:pl-28">
                     <div className='flex flex-col items-center sm:items-start'>
                         <img className='w-72' src={logo} alt="Thrive Gym Logo" />
-                        <h3 className='text-3xl py-8'>Select today's workout</h3>
+                        <h3 className='text-3xl py-8'>Select today's exercise</h3>
                     </div>
                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
                         {
                             exercises.map(exercise => <Exercise
+                                key={exercise.id}
                                 exercise={exercise}
                                 handleAddToList={handleAddToList}
-                                key={exercise.id}>
+                                toggle={toggle}>
                             </Exercise>)
                         }
                         <ToastContainer />

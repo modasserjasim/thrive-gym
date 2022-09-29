@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className='px-5 md:px-20 lg:px-60 border-base-300 border-t pt-16 md:pt-32'>
-            <h2 className='text-3xl md:text-5xl text-center mb-14'>3 React JS Questions and Answers</h2>
+            <h2 className='text-3xl md:text-4xl text-center mb-14'>3 React JS Questions and Answers</h2>
             <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-lg sm:text-2xl font-semibold">
                     How does react work?

@@ -7,7 +7,7 @@ const SidebarExercise = ({ exerciseList, breakTime }) => {
     for (const exercise of exerciseList) {
         exerciseTime = exerciseTime + exercise.timeRequired;
     }
-    const notify = () => toast("Activity Successfully Completed");
+    const activityCompleted = () => toast("Activity Successfully Completed");
 
     return (
         <div>
@@ -20,7 +20,7 @@ const SidebarExercise = ({ exerciseList, breakTime }) => {
                 <h2 className='text-lg font-bold'>Break time</h2>
                 <p className='text-lg font-medium text-gray-400'>{breakTime} Seconds</p>
             </div>
-            <button onClick={notify} className="w-full bg-primary text-white p-3 mt-10 disabled:bg-secondary text-2xl rounded-md font-semibold hover:bg-green-700">Activity Completed</button>
+            <button onClick={activityCompleted} className="w-full bg-primary text-white p-3 mt-10 disabled:bg-secondary text-2xl rounded-md font-semibold hover:bg-green-700">Activity Completed</button>
             <ToastContainer />
         </div>
     );
