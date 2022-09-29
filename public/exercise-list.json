@@ -1,56 +1,83 @@
 [
   {
     "id": "a11b362d6ead",
-    "name": "Push Up",
-    "description": "Fitness push up bar stands pushup chest bar strong chrome steel pushup stands with comfortable foam grip and non-slip bars.",
-    "forAge": "20-25",
-    "timeRequired": 60,
+    "name": "Muscle Building",
+    "description": "To build muscle effectively, it's important to have a basic resistance training plan. Victoria Sekely, a doctor of physical therapy, certified strength and conditioning specialist and run coach keeps it simple",
+    "forAge": "15-45",
+    "timeRequired": 190,
     "break": 20,
-    "img": "https://static-01.daraz.com.bd/p/d6446d683a67cd176c3862b3253e78ee.jpg"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/musclebuilding.jpg"
   },
   {
     "id": "a22b362d6ead",
-    "name": "Self-Suction",
-    "description": "Self-Suction Sit Up Bars Situp Assist Bar Stand Gym Workout Fitness Equipment. A set of equipment can carry out a variety of sports.",
-    "forAge": "20-25",
-    "timeRequired": 40,
+    "name": "AB Workouts",
+    "description": "AB workout plans will help you build a strong and sturdy core. Do this 3 to 6 times per week, allowing at least one day of rest.",
+    "forAge": "15-60",
+    "timeRequired": 140,
     "break": 30,
-    "img": "https://static-01.daraz.com.bd/p/3c017501d9864cef13782c03d7bd4999.jpg"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/abworkouts.jpg"
   },
   {
     "id": "a33b362d6ead",
-    "name": "Cycle Exercise",
-    "description": "Easy to assembleQuiet and smooth Pad resistance Manual tension6 function LCD computer, showing; (time, speed, distance, count.",
-    "forAge": "20-25",
+    "name": "Bicep Workouts",
+    "description": "A proper biceps workout is key to building stronger arms and increasing your power to lift. The benefits of stronger biceps are not only for better aesthetics but also for better pulling power as your increased power to pull can help in a range of exercise that depend on this motion.",
+    "forAge": "20-55",
     "timeRequired": 120,
     "break": 40,
-    "img": "https://static-01.daraz.com.bd/p/c3e6e8e3f4b254b9e3b4d236354a2178.png"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/bicepworkouts.jpg"
   },
   {
     "id": "a44b362d6ead",
-    "name": "Arm Wrist Pump",
-    "description": "Hand Grip (2 PCS) Home or Gym Exerciser Sports Fitness Equipment Arm Wrist Muscle Developer for men & Women.",
+    "name": "Cardio Workouts",
+    "description": "Cardio workouts will help you burn some serious calories. Running is the winner for most calories burned per hour. Stationary bicycling, jogging, and swimming are excellent options as well. HIIT exercises are also great for burning calories. ",
     "forAge": "20-50",
-    "timeRequired": 60,
+    "timeRequired": 160,
     "break": 50,
-    "img": "https://static-01.daraz.com.bd/p/9c73cca6c73be6043355e9b26ca66db1.jpg"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/cardio_0.jpg"
   },
   {
     "id": "a55b362d6ead",
-    "name": "Dumbbell Exercise",
-    "description": "Hand Grip (2 PCS) Home or Gym Exerciser Sports Fitness Equipment Arm Wrist Muscle Developer for men & Women.",
-    "forAge": "20-50",
-    "timeRequired": 80,
+    "name": "Full Body Workouts",
+    "description": "Full body workouts train all muscle groups in a single workout. The main goal of a full-body workout is to target all of your muscle groups to efficiently and effectively promote muscle growth.",
+    "forAge": "20-70",
+    "timeRequired": 180,
     "break": 60,
-    "img": "https://static-01.daraz.com.bd/p/b9bdc55a85491e163c58c24737cba211.jpg"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/fullbody.jpg"
   },
   {
     "id": "a66b362d6ead",
-    "name": "Treadmill Running",
-    "description": "Hand Grip (2 PCS) Home or Gym Exerciser Sports Fitness Equipment Arm Wrist Muscle Developer for men & Women.",
+    "name": "Chest Workouts",
+    "description": "Target your lower, middle and upper chest with our wide range of chest workout plans. Using a shoulder-width grip, wrap your fingers around the bar with your palms facing away from you. Lift the bar up from the rack and hold it straight over you with your arms locked.",
     "forAge": "20-50",
     "timeRequired": 300,
     "break": 70,
-    "img": "https://static-01.daraz.com.bd/p/1f81a68122c675d593149ff74c024580.jpg"
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/chestworkouts.jpg"
+  },
+  {
+    "id": "a77b362d6ead",
+    "name": "Shoulder Workouts",
+    "description": "shoulder workouts will help you build some rock-solid shoulders. Stand up and place your hands in front of your thighs, palms toward you. Pull both weights up until they're just below your chin. Lower and repeat for six reps.",
+    "forAge": "20-60",
+    "timeRequired": 100,
+    "break": 70,
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/shoulderworkout.jpg"
+  },
+  {
+    "id": "a88b362d6ead",
+    "name": "Leg Workouts",
+    "description": "Take your leg training to the next level with leg workout plans. The workouts are created by fitness experts and target your lower body muscles.",
+    "forAge": "20-60",
+    "timeRequired": 250,
+    "break": 70,
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/legworkouts.jpg"
+  },
+  {
+    "id": "a99b362d6ead",
+    "name": "Back Workouts",
+    "description": "A strong back is essential for safely and effectively performing all of the most effective compound exercises, like the squat, dead lift, bench press, and overhead press, which are what will deliver the majority of your muscle and strength gains. ",
+    "forAge": "20-60",
+    "timeRequired": 450,
+    "break": 70,
+    "img": "https://cdn.muscleandstrength.com/sites/default/files/styles/400x250/public/taxonomy/image/workouts/backworkouts.jpg"
   }
 ]

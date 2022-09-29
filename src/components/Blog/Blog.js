@@ -9,12 +9,16 @@ const Blog = () => {
                     How does react work?
                 </div>
                 <div className="collapse-content">
-                    <p>ReactJS divides the UI into isolated reusable pieces of code known as components. React components work similarly to JavaScript functions as they accept arbitrary inputs called properties or props. It's possible to have as many components as necessary without cluttering your code.</p>
-                    <p className='py-4'>
-                        React is without a doubt one of the most powerful and flexible frontend frameworks. But with its great power comes great responsibility - it's easy to misuse it and create a mess of an app. To avoid it, one needs to really understand how React works internally by studying its code implementation and structure. Coincidentally, it is also one of the best ways to learn React in general. Lets do this today!</p>
-                    <p>
-                        Working with a non-opinionated framework such as React gives you a lot of freedom, but also introduces more room for mistakes. Wait a second… Whats the deal with opinionated and non-opinionated frameworks?
-                    </p>
+                    <p>React takes a declarative approach to application development that makes it simple to reason about the program while simultaneously aiming for efficiency and flexibility. It is a component-based, open-source front-end library that is exclusively responsible for the application's view layer. It creates basic views for each state in the project, and when the data changes, React updates and renders the appropriate component quickly. The declarative approach simplifies debugging and makes the code more predictable.</p>
+
+                    <p className='py-4'>Let's have a look at an Instagram page built entirely with React to better understand how it works.</p>
+
+                    <p>React splits the user interface into several components, as seen in the picture, making the code easier to debug. Each component has its attribute and function.</p>
+                    <div className='flex justify-center py-5'>
+                        <img src="https://modasserjasim.com/images/react-work.webp" alt="How react work" />
+                    </div>
+
+
                 </div>
             </div>
             <div tabIndex={1} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">

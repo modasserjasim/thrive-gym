@@ -20,7 +20,9 @@ const Home = () => {
 
     useEffect(() => {
         const storedBreakTime = getLocalStorageData();
-        setBreakTime(storedBreakTime);
+        if (storedBreakTime) {
+            setBreakTime(storedBreakTime);
+        }
 
     }, []);
 
@@ -41,7 +43,7 @@ const Home = () => {
                 <div className="w-full md:w-8/12 lg:w-9/12 py-8 md:py-16 md:pl-14 lg:pl-28">
                     <div className='flex flex-col items-center sm:items-start'>
                         <img className='w-72' src={logo} alt="Thrive Gym Logo" />
-                        <h3 className='text-3xl py-8'>Select today's exercise</h3>
+                        <h3 className='text-3xl py-8'>Select today's workout</h3>
                     </div>
                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
                         {
