@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Break = ({ breakTime }) => {
+const Break = ({ time, handleBreakTime }) => {
     // console.log(breakTime);
+
     return (
         <div>
-            <button className='text-lg font-bold bg-base-300 p-3 rounded-full active:bg-primary'>
-                {breakTime.break}s
+            <button onClick={() => handleBreakTime(time)} className='text-lg font-bold bg-base-300 p-3 rounded-full active:bg-primary'>
+                {time.break}s
             </button>
         </div>
     );

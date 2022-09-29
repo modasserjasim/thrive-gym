@@ -3,10 +3,9 @@ import Break from '../Break/Break';
 import PersonalInfo from '../PersonalInfo/PersonalInfo';
 import SidebarExercise from '../SidebarExercise/SidebarExercise';
 
-const Sidebar = (props) => {
-    const exercises = props.exercises;
-    const exerciseList = props.exerciseList;
-    const breakTimes = exercises.slice(0, 4);
+const Sidebar = ({ exercises, exerciseList, breakTime, handleBreakTime }) => {
+    // console.log(exercises, exerciseList);
+    const getBreakTimes = exercises.slice(0, 4);
     return (
         <div className='sticky top-10'>
             <PersonalInfo></PersonalInfo>
@@ -14,10 +13,15 @@ const Sidebar = (props) => {
             <h3 className='text-xl font-semibold'>Add A Break</h3>
             <div className='bg-base-100 p-5 mt-5 mb-10 px-5 rounded-lg flex justify-between text-center flex-wrap'>
                 {
-                    breakTimes.map(breakTime => <Break breakTime={breakTime} key={breakTime.id}></Break>)
+                    getBreakTimes.map(time => <Break
+                        time={time}
+                        key={time.id}
+                        handleBreakTime={handleBreakTime}
+
+                    ></Break>)
                 }
             </div>
-            <SidebarExercise exerciseList={exerciseList}></SidebarExercise>
+            <SidebarExercise exerciseList={exerciseList} breakTime={breakTime}></SidebarExercise>
 
         </div>
     );

@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [exerciseList, setExerciseList] = useState([]);
+    const [breakTime, setBreakTime] = useState(0);
 
     useEffect(() => {
         fetch('exercise-list.json')
@@ -19,6 +20,10 @@ const Home = () => {
         const newExerciseList = [...exerciseList, exercise];
         setExerciseList(newExerciseList);
         toast(exercise.name + ' Added to the list!');
+    }
+    const handleBreakTime = (time) => {
+        const newTime = time.break;
+        setBreakTime(newTime);
     }
     return (
         <div>
@@ -39,7 +44,12 @@ const Home = () => {
                 </div>
 
                 <div className="bg-base-300  md:w-3/12 p-5 lg:p-10 mt-8 md:mt-0 md:ml-14 lg:ml-28">
-                    <Sidebar exercises={exercises} exerciseList={exerciseList}></Sidebar>
+                    <Sidebar
+                        exercises={exercises}
+                        exerciseList={exerciseList}
+                        breakTime={breakTime}
+                        handleBreakTime={handleBreakTime}
+                    ></Sidebar>
                 </div>
             </div>
         </div>
