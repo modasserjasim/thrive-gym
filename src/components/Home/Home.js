@@ -5,6 +5,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addToLocalStorage, getLocalStorageData } from '../../utilities/localStorage';
+import Blog from '../Blog/Blog';
 
 const Home = () => {
     const [exercises, setExercises] = useState([]);
@@ -63,6 +64,7 @@ const Home = () => {
                     ></Sidebar>
                 </div>
             </div>
+            <Blog></Blog>
         </div>
     );
 };
