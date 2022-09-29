@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SidebarExercise = ({ exerciseList, breakTime }) => {
-    console.log(breakTime);
     let exerciseTime = 0;
     for (const exercise of exerciseList) {
         exerciseTime = exerciseTime + exercise.timeRequired;

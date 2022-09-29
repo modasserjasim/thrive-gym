@@ -24,6 +24,7 @@ const Home = () => {
     const handleBreakTime = (time) => {
         const newTime = time.break;
         setBreakTime(newTime);
+        toast(time.break + 's Added as your break time!');
     }
     return (
         <div>
